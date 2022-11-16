@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="health.css">
+    <style>
+        body{
+            background-image: url(eating_background.jpg);
+        }
+        #currentpage{
+            background-color: #cc4c02;
+        }
+        #currentpage_underline{
+            background-color: #cc4c02d8;
+        }
+        #nav{
+            background-color: #cc4c02c8;
+        }
+        #aside{
+            background-color: #cc4c02b8;
+        }
+        #section{
+            background-color: #cc4c02a8;
+        }
+        #msection {
+            background-color: #cc4c02a8;
+        }
+    </style>
+    <title>Health Smart@HK</title>
+</head>
+<body>
+    <header><div id="headtitle">Headlth Smart @ HK</div></header>
+    <div class="flex justify">
+
+        <a href="index.html">
+            <div id="healthhome" class="tabs">
+                <h2>Health Home</h2>
+            </div>
+        </a>
+
+        <a href="healtheating.html">
+            <div id="currentpage" class="tabs"><h2>Health Eating</h2></div>
+        </a>
+
+        <a href="healthhiking.html">
+            <div id="healthbody" class="tabs"><h2>Health Hiking</h2></div>
+        </a>
+
+        <a href="healthbody.html">
+            <div id="healthcare" class="tabs"><h2>Health Body</h2></div>
+        </a>
+    </div>
+
+    <div id="currentpage_underline"></div>
+    <a href="index.html">
+        <div id="nav">
+            <img src="banner.png" style="width:100%;height:10vh;opacity: 0.8;" />
+        </div>
+    </a>
+    <div class="flex flex_mobile height_box" style="width:auto;height:100%;">
+        <div id="aside" style="width:auto;height:100%;">
+            <iframe src="healtheating_nav.html" name="iframe_n" target="iframe_i" frameborder="0"
+                style="width:100%;height:100%;"></iframe>
+        </div>
+        <div id="section">
+            <iframe src="healtheating_pyramid.html" name="iframe_i" frameborder="0" 
+            style="width:100%;height:100%;"></iframe>
+        </div>
+    </div>
+</body>
+</html>

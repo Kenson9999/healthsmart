@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="health.css">
+    <style>
+        #currentpage {
+            background-color: #007bff;
+        }
+
+        #currentpage_underline {
+            background-color: #007bffd8;
+        }
+
+        #nav {
+            background-color: #007bffc8;
+        }
+
+        #aside {
+            background-color: #007bffb8;
+        }
+
+        #section {
+            background-color: #007bffa8;
+        }
+        #msection {
+            background-color: #007bffa8;
+        }
+    </style>
+
+    <style>
+        body{
+            background-image: url(home_background.jpg);
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #DDD;
+        }
+
+        tr:hover {
+            background-color: #D6EEEE;
+        }
+
+    </style>
+
+    <title>Health Smart@HK</title>
+</head>
+
+<body>
+    <header><div id="headtitle">Headlth Smart @ HK</div></header>
+
+
+    <div class="flex justify">
+        <a href="index.html">
+            <div id="currentpage" class="tabs">
+                <h2>Health Home</h2>
+            </div>
+        </a>
+        
+        <a href="healtheating.html">
+            <div id="healtheating" class="tabs">
+                <h2>Health Eating</h2>
+            </div>
+        </a>
+
+        <a href="healthhiking.html">
+            <div id="healthbody" class="tabs">
+                <h2>Health Hiking</h2>
+            </div>
+        </a>
+
+        <a href="healthbody.html">
+            <div id="healthcare" class="tabs">
+                <h2>Health Body</h2>
+            </div>
+        </a>
+    </div>
+
+    <div id="currentpage_underline"></div>
+   <div class="flex flex_mobile">
+        <div id="aside">
+            <div class="nav_box">
+                <div class="nav_title">What's New</div >
+            </div >
+            <div class="nav_box">
+                <div class="nav_title">New Hiking Route</div>
+            </div>
+            <div class="nav_box">
+                <div class="nav_title">New Food Receipe</div>
+            </div>
+            <hr>
+            <div class="nav_box">
+                <div class="nav_title">Hot Topic</div>
+            </div>
+            <a href="healthbody_calculator.html">
+                <div class="nav_box">
+                    <div class="nav_title">BMI Calculator</div>
+                </div>
+            </a>
+            </div>
+        <div id="msection">
+
+            <table border="2" width="900" cellspacing="2" cellpadding="2">
+                <caption>南丫島行山徑</caption>
+                <tr>
+                    <th>路線：</th>
+                    <th>南丫島榕樹灣、風采發電站.........</th>
+                    <tr>
+                        <td>長度：</td>
+                        <td>約7公里</td>
+                        <tr>
+                            <td>需時:</td>
+                            <td>約2小時(未計休息時間)</td>
+                        </tr>
+                        <tr>
+                            <td>難度：</td>
+                            <td>兩星</td>
+                        </tr>
+                        <tr>
+                            <td>起點交通：</td>
+                    <td>可從中環或香港仔出發</td>
+                </tr>
+                <tr>
+                    <td>終點交通</td>
+                    <td>從索灣灣碼頭回中環</td>
+                </tr>
+            </table>
+        </div>
+            <div id="section">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1QCIW6-Sxx5MF8hHo9La7ARzzgmg&hl=zh-TW&ehbc=2E312F" width="640" height="480">
+                    
+                </iframe>
+            </div>
+    </div>
+</body> 
+
+</html>

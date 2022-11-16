@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="health.css">
+    <style>
+        #currentpage {
+            background-color: #454095;
+        }
+
+        #currentpage_underline {
+            background-color: #454095d8;
+        }
+
+        #nav {
+            background-color: #464095c8;
+        }
+
+        #aside {
+            background-color: #464095b8;
+        }
+
+        #section {
+            background-color: #464095a8;
+        }
+
+        #msection {
+            background-color: #464095a8;
+        }
+        body {
+            background-image: url(hiking_background.jpg);
+        }
+    </style>
+
+    <title>Health Smart@HK</title>
+</head>
+
+<body>
+    <header>
+        <div id="headtitle">Headlth Smart @ HK</div>
+    </header>
+
+
+    <div class="flex justify">
+        <a href="index.html">
+            <div id="healthhome" class="tabs">
+                <h2>Health Home</h2>
+            </div>
+        </a>
+
+        <a href="healtheating.html">
+            <div id="healtheating" class="tabs">
+                <h2>Health Eating</h2>
+            </div>
+        </a>
+
+        <a href="healthhiking.html">
+            <div id="currentpage" class="tabs">
+                <h2>Health Hiking</h2>
+            </div>
+        </a>
+
+        <a href="healthbody.html">
+            <div id="healthcare" class="tabs">
+                <h2>Health Body</h2>
+            </div>
+        </a>
+    </div>
+
+    <div id="currentpage_underline"></div>
+    <a href="index.html">
+        <div id="nav">
+            <img src="banner.png" style="width:100%;height:10vh;opacity: 0.8;" />
+        </div>
+    </a>
+    <div class="flex flex_mobile height_box" style="width:auto;height:100%;">
+        <div id="aside" style="width:auto;height:100%;">
+            <iframe src="healthhiking_nav.html" name="iframe_n" target="iframe_i" frameborder="0"
+                style="width:100%;height:100%;"></iframe>
+        </div>
+        <div id="section">
+            <iframe src="healthhiking_adv.html" name="iframe_i" frameborder="0" 
+            style="width:100%;height:100%;"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

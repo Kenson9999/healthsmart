@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healtheating</title>
+    <style>
+        .form-questionnaire {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+    
+        .form-questionnaire {
+            background-color: rgba(54, 188, 206, 0.938);
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+    
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+    
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+    
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+    
+        .form-questionnaire button {
+            padding: 10px 20px;
+            background-color: dodgerblue;
+            border: 1px solid #ddd;
+            color: white;
+            cursor: pointer;
+        }
+        .form-questionnaire button:hover {
+            background-color: royalblue;
+        }
+        </style>
+        
+</head>
+
+<body>
+          <form class="form-questionnaire">
+            <h2>Healthy Eating Questionnaire</h2>
+            <div class="form-control">
+                <img src="name.svg" class="topsvg">
+                <label for="name" id="label-name">
+                    Name
+                </label>
+                <input type="text" id="name" placeholder="Enter your name"/>
+            </div>
+            <div class="form-control">
+                <img src="email.svg" class="topsvg">
+                <label for="email" id="label-email">
+                    Email
+                </label>
+                <input type="email" id="email" placeholder="Enter your email"/>
+            </div>
+            <div class="form-control">
+                <img src="age.svg" class="topsvg">
+                <label for="age" id="label-age">
+                    Age
+                </label>
+                <select name="year" class="ageselect" id="year">
+                    <option selected="selected" disabled="disabled" style="display:none" value>Please choice</option>
+                    <option value="0-4">0-4</option>
+                    <option value="5-9">5-9</option>
+                    <option value="10-14">10-14</option>
+                    <option value="15-19">15-19</option>
+                    <option value="20-24">20-24</option>
+                    <option value="25-29">25-29</option>
+                    <option value="30-34">30-34</option>
+                    <option value="35-39">35-39</option>
+                    <option value="40-44">40-44</option>
+                    <option value="45-49">45-49</option>
+                    <option value="50-54">50-54</option>
+                    <option value="55-59">55-59</option>
+                    <option value="60-64">60-64</option>
+                    <option value="65-69">65-69</option>
+                    <option value="70-74">70-74</option>
+                    <option value="75-79">75-79</option>
+                    <option value="80-84">80-84</option>
+                    <option value=">=85">>=85</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <img src="time.svg" class="topsvg"><br>
+                <label>
+                    How is Your Frequency of Eating Three Meal Regularly? 
+                </label><br>
+                <label for="eating-frequency-1">
+                    <input type="radio" id="eating-frequency-1" name="frequency">Always (10times/8times)</input>
+                </label><br>
+                <label for="eating-frequency-2">
+                    <input type="radio" id="eating-frequency-2" name="frequency">Often (10times/6times)</input>
+                </label><br>
+                <label for="eating-frequency-3">
+                    <input type="radio" id="eating-frequency-3" name="frequency">Occasionally (10times/3times)</input>
+                </label><br>
+                <label for="eating-frequency-4">
+                    <input type="radio" id="eating-frequency-4" name="frequency">Seldom (10times/1times)</input>
+                </label><br>
+            </div>
+            <div class="form-control">
+                <img src="candy.svg" class="topsvg"><br>
+                <label>
+                    How is Your Frequency of Eating Dessert? 
+                </label><br>
+                <label for="eating-dessert-1">
+                    <input type="radio" id="eating-dessert-1" name="frequency">Always (10times/8times)</input> 
+                </label><br>
+                </label>
+                <label for="eating-dessert-2">
+                    <input type="radio" id="eating-dessert-1" name="frequency">Often (10times/6times)</input> 
+                </label><br>
+                <label for="eating-dessert-3">
+                    <input type="radio" id="eating-dessert-1" name="frequency">Occasionally (10times/3times)</input> 
+                </label><br>
+                <label for="eating-dessert-4">
+                    <input type="radio" id="eating-dessert-1" name="frequency">Seldom (10times/8times)</input> 
+                </label><br>
+            <div id="drinkgroup" class="form-control">
+                <img src="water.svg" class="topsvg"><br>
+                <label>
+                    What Kind of Drink Do You Prefer, When You Feel Thirsty?
+                </label><br>
+                <label for="drinking-type">
+                    <input type="checkbox" id="drinking-type-1" name="drinking-type-1" value="Water&Tea"><label for="drinking-type-1"> Water&Tea
+                </label><br>
+                <label for="drinking-type">
+                    <input type="checkbox" id="drinking-type-2" name="drinking-type-2" value="Coke/Soft Drink"><label for="drinking-type-2"> Coke/Soft Drink
+                </label><br>
+                <label for="drinking-type">
+                    <input type="checkbox" id="drinking-type-3" name="drinking-type-3" value="Juice"><label for="drinking-type-3"> Juice
+                </label><br>
+                <label for="drinking-type">
+                    <input type="checkbox" id="drinking-type-4" name="drinking-type-4" value="Sport Drink"><label for="drinking-type-4"> Sport Drink
+                </label><br>
+                <label for="drinking-type">
+                    <input type="checkbox" id="drinking-type-5" name="drinking-type-5" value="Coffee"><label for="drinking-type-5"> Coffee
+                </label><br>
+            </div>
+            <script>
+                function onlyOneCheckBox() {
+                    var drinkgroup = document.getElementById('drinkgroup').getElementsByTagName("input");
+                    
+                    //Note #2 Change max limit here as necessary
+                    var limit = 1;
+                  
+                    for (var i = 0; i < drinkgroup.length; i++) {
+                        drinkgroup[i].onclick = function() {
+                            var checkedcount = 0;
+                                for (var i = 0; i < drinkgroup.length; i++) {
+                                checkedcount += (drinkgroup[i].checked) ? 1 : 0;
+                            }
+                            if (checkedcount > limit) {
+                                console.log("You can select maximum of " + limit + " checkbox.");
+                                alert("You can select maximum of " + limit + " checkbox.");
+                                this.checked = false;
+                            }
+                        }
+                    }
+                }
+                </script>
+                
+                <script type="text/javascript">
+                    onlyOneCheckBox()
+            </script>
+            <div id="foodgroup" class="form-control">
+                <img src="food.svg" class="topsvg"><br>
+                <label>
+                    What Kind of Food Do You Prefer, When You Feel Hungry?
+                </label><br>
+                <label for="food-type">
+                    <input type="checkbox" id="food-type-1" name="food-type-1" value="Instant Noodle"><label for="food-type-1"> Instant Noodle
+                </label><br>
+                <label for="food-type">
+                    <input type="checkbox" id="food-type-2" name="food-type-2" value="Biscuit/Bread"><label for="food-type-2"> Biscuit/Bread
+                </label><br>
+                <label for="food-type">
+                    <input type="checkbox" id="food-type-3" name="food-type-3" value="Fried Food"><label for="food-type-3"> Fried Food
+                </label><br>
+                <label for="food-type">
+                    <input type="checkbox" id="food-type-4" name="food-type-4" value="Fruit/Vegetable"><label for="food-type-4"> Fruit/Vegetable
+                </label><br>
+                <label for="food-type">
+                    <input type="checkbox" id="food-type-5" name="food-type-5" value="DimSum"><label for="food-type-5"> DimSum
+                </label><br>
+            </div>
+        </div>
+        <script>
+            function onlyOneCheckBox() {
+                var foodgroup = document.getElementById('foodgroup').getElementsByTagName("input");
+                
+                //Note #2 Change max limit here as necessary
+                var limit = 1;
+              
+                for (var i = 0; i < foodgroup.length; i++) {
+                    foodgroup[i].onclick = function() {
+                        var checkedcount = 0;
+                            for (var i = 0; i < foodgroup.length; i++) {
+                            checkedcount += (foodgroup[i].checked) ? 1 : 0;
+                        }
+                        if (checkedcount > limit) {
+                            console.log("You can select maximum of " + limit + " checkbox.");
+                            alert("You can select maximum of " + limit + " checkbox.");
+                            this.checked = false;
+                        }
+                    }
+                }
+            }
+            </script>
+            
+            <script type="text/javascript">
+                onlyOneCheckBox()
+        </script>
+        <div id="restaurantgroup" class="form-control">
+            <img src="restaurant.svg" class="topsvg"><br>
+            <label>
+                What Kind of Restaurant Do You Prefer When You Go Outside to Eat?
+            </label><br>
+            <label for="restaurant-type">
+                <input type="checkbox" id="restaurant-type-1" name="restaurant-type-1" value="Chinese Restaurant"><label for="-type-1"> Chinese Restaurant
+            </label><br>
+            <label for="restaurant-type">
+                <input type="checkbox" id="restaurant-type-2" name="restaurant-type-2" value="Western Restaurant"><label for="-type-2"> Western Restaurant
+            </label><br>
+            <label for="restaurant-type">
+                <input type="checkbox" id="restaurant-type-3" name="restaurant-type-3" value="Japan Restaurant"><label for="-type-3"> Japan Restaurant
+            </label><br>
+            <label for="restaurant-type">
+                <input type="checkbox" id="restaurant-type-4" name="restaurant-type-4" value="Fast Food Restaurant"><label for="-type-4"> Fast Food Restaurant
+            </label><br>
+            <label for="restaurant-type">
+                <input type="checkbox" id="restaurant-type-5" name="restaurant-type-5" value="Bar"><label for="-type-5"> Bar
+            </label><br>
+        </div>
+        <script>
+            function onlyOneCheckBox() {
+                var restaurantgroup = document.getElementById('restaurantgroup').getElementsByTagName("input");
+                
+                //Note #2 Change max limit here as necessary
+                var limit = 1;
+              
+                for (var i = 0; i < restaurantgroup.length; i++) {
+                    restaurantgroup[i].onclick = function() {
+                        var checkedcount = 0;
+                            for (var i = 0; i < restaurantgroup.length; i++) {
+                            checkedcount += (restaurantgroup[i].checked) ? 1 : 0;
+                        }
+                        if (checkedcount > limit) {
+                            console.log("You can select maximum of " + limit + " checkbox.");
+                            alert("You can select maximum of " + limit + " checkbox.");
+                            this.checked = false;
+                        }
+                    }
+                }
+            }
+            </script>
+            
+            <script type="text/javascript">
+                onlyOneCheckBox()
+        </script>
+        <div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label><br>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit" onclick="alert('Thank You you submit this questionnaire!');">
+			Submit
+		</button>
+          </form>
+        </div>
+</body>
+
+</html>

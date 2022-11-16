@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="health.css">
+    <style>
+        #currentpage {
+            background-color: #007bff;
+        }
+
+        #currentpage_underline {
+            background-color: #007bffd8;
+        }
+
+        #nav {
+            background-color: #007bffc8;
+        }
+
+        #aside {
+            background-color: #007bffb8;
+        }
+
+        #section {
+            background-color: #007bffa8;
+        }
+        #msection {
+            background-color: #007bffa8;
+        }
+    </style>
+
+    <style>
+        body{
+            background-image: url(home_background.jpg);
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #DDD;
+        }
+
+        tr:hover {
+            background-color: #D6EEEE;
+        }
+
+    </style>
+
+    <title>Health Smart@HK</title>
+</head>
+
+<body>
+    <header><div id="headtitle">Headlth Smart @ HK</div></header>
+
+
+    <div class="flex justify">
+        <a href="index.html">
+            <div id="currentpage" class="tabs">
+                <h2>Health Home</h2>
+            </div>
+        </a>
+        
+        <a href="healtheating.html">
+            <div id="healtheating" class="tabs">
+                <h2>Health Eating</h2>
+            </div>
+        </a>
+
+        <a href="healthhiking.html">
+            <div id="healthbody" class="tabs">
+                <h2>Health Hiking</h2>
+            </div>
+        </a>
+
+        <a href="healthbody.html">
+            <div id="healthcare" class="tabs">
+                <h2>Health Body</h2>
+            </div>
+        </a>
+    </div>
+
+    <div id="currentpage_underline"></div>
+   <div class="flex flex_mobile">
+    <div id="aside">
+        <a href="index.html">
+            <div class="nav_box">
+                <div class="nav_title">About Us</div >
+            </div >
+        </a>
+        <a href="healthhome_newhiking.html">
+            <div class="nav_box">
+                <div class="nav_title">New Hiking Route</div>
+            </div>
+        </a>
+        <a href="healthhome_newfood.html">
+        <div class="nav_box">
+            <div class="nav_title">New Food Receipe</div>
+        </div>
+        </a>
+        <hr>
+
+        <a href="healthbody_calculator.html">
+            <div class="nav_box">
+                <div class="nav_title">BMI Calculator</div>
+            </div>
+        </a>
+    </div>
+        <div id="msection">
+
+            <table border="2" width="900" cellspacing="2" cellpadding="2">
+                <caption>Lamma Island Hiking Route</caption>
+                <tr>
+                    <th>Route：</th>
+                    <th>Yung Shue Wan, Lamma Island --> Hung Shing Yeh Beach --> Sok Kwu Wan</th>
+                    <tr>
+                        <td>Length：</td>
+                        <td>About 7 km</td>
+                        <tr>
+                            <td>Time:</td>
+                            <td>About 2 hr</td>
+                        </tr>
+                        <tr>
+                            <td>Difficulty：</td>
+                            <td>2 Star (1 Star is Easiest, 5 Star is Hardest)</td>
+                        </tr>
+                        <tr>
+                            <td>Starting Point Traffic：</td>
+                    <td>Take the Ferry From Central Pier to Yung Shue Wan Pier</td>
+                </tr>
+                <tr>
+                    <td>Ending Point Traffic</td>
+                    <td>Take the Ferry From Sok Kwu Wan to Central Pier</td>
+                </tr>
+            </table>
+        </div>
+            <div id="section">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1QCIW6-Sxx5MF8hHo9La7ARzzgmg&hl=zh-TW&ehbc=2E312F" width="640" height="480">
+                    
+                </iframe>
+            </div>
+    </div>
+</body> 
+
+</html>
